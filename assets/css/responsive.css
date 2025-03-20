@@ -1,0 +1,71 @@
+/* Responsive Styles for Hotel Website */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+    
+    .nav-link {
+        padding: 0.25rem 0.5rem !important;
+    }
+
+   
+    
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .section-title {
+        margin-bottom: 2rem;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+    
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form .btn, .newsletter .btn {
+        width: 100%;
+    }
+}

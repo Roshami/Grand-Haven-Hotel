@@ -1,0 +1,239 @@
+/* Main Styles for Hotel Website */
+
+/* Global Styles */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #3182ce;
+    --light-color: #f8f9fa;
+    --dark-color: #1a202c;
+    --text-color: #333;
+    --text-light: #6c757d;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-top: 86px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    height: 86px;
+}
+
+.navbar-brand span {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.team-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/gallery/Hotel-exterior.jpeg') center/cover no-repeat;
+    opacity: 0.8;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Gallery Section */
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.service-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Facilities Page */
+.facility-item {
+    margin-bottom: 3rem;
+}
+
+.facility-image {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.facility-image img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.facility-image:hover img {
+    transform: scale(1.03);
+}
+
+/* Contact Page */
+.contact-info-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 1rem;
+    min-width: 2rem;
+    text-align: center;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(49, 130, 206, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #2b6cb0;
+    border-color: #2b6cb0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+}
+
+footer h5 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+footer .border-bottom {
+    border-color: var(--secondary-color) !important;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+/* Facilities Page */
+.facility-card {
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+.facility-card:hover {
+    transform: translateY(-5px);
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.facility-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contact Us Page */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+.contact-info i {
+    font-size: 24px;
+    color: #007bff;
+}
+.map-container {
+    height: 350px;
+}
