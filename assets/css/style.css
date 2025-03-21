@@ -40,9 +40,32 @@ header {
     margin: 0 0.25rem;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover {
     background-color: var(--secondary-color);
     border-radius: 4px;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    animation: slidein;;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0% {
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    50% {
+        border-bottom: 2px solid var(--primary-color);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    100%{
+        border-bottom: 2px solid var(--secondary-color);
+    }
 }
 
 /* Hero Section */
@@ -97,15 +120,16 @@ header {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
+
 .gallery-img:hover {
     transform: scale(1.05);
 }
 
-#hotelCarousel img{
-    height: 500px;   
+#hotelCarousel img {
+    height: 500px;
 }
 
-.gallery-section h2{
+.gallery-section h2 {
     margin-top: 20px;
 }
 
@@ -132,6 +156,11 @@ header {
 
 .services-section h2 {
     margin-top: 20px;
+    color: var(--text-color);
+}
+
+.services-section p {
+    color: var(--text-light);
 }
 
 /* Facilities Page */
@@ -155,8 +184,13 @@ header {
 }
 
 /* About us page */
-.about-us h2{
+.about-us h2 {
     margin: 20px;
+    color: var(--text-color);
+}
+
+.about-us p {
+    color: var(--text-light);
 }
 
 .about-us-section {
@@ -191,7 +225,8 @@ header {
     border-color: var(--secondary-color);
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: #2b6cb0;
     border-color: #2b6cb0;
 }
@@ -229,12 +264,21 @@ footer .border-bottom {
 }
 
 /* Facilities Page */
-.facilities section{
+.facilities section {
     padding: 20px;
 }
 
-.facilities h2{
+.facilities h2 {
     margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.facilities p {
+    color: var(--text-light);
+}
+
+.facilities ul {
+    color: var(--dark-color);
 }
 
 .facility-card {
@@ -244,11 +288,13 @@ footer .border-bottom {
     background: #f8f9fa;
     border-radius: 10px;
 }
+
 .facility-card:hover {
     transform: translateY(-5px);
     background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .facility-img {
     width: 100%;
     height: 250px;
@@ -261,20 +307,27 @@ footer .border-bottom {
     text-align: center;
     padding: 20px;
 }
+
 .contact-info i {
     font-size: 24px;
     color: #007bff;
 }
+
 .map-container {
     height: 350px;
 }
 
-.contact section{
+.contact section {
     padding: 20px;
 }
 
-.contact h2{
+.contact h2 {
     margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.contact p {
+    color: var(--text-light);
 }
 
 /* Bookking html */
@@ -286,12 +339,13 @@ footer .border-bottom {
     max-width: 600px;
     margin: 50px auto;
 }
+
 .booking-container h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.booking{
+.booking {
     padding: 20px;
 }
 
