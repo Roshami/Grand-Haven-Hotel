@@ -154,6 +154,18 @@ header {
     transform: scale(1.03);
 }
 
+/* About us page */
+.about-us h2{
+    margin: 20px;
+}
+
+.about-us-section {
+    padding-top: 20px;
+}
+
+
+
+
 /* Contact Page */
 .contact-info-item {
     display: flex;
@@ -217,6 +229,14 @@ footer .border-bottom {
 }
 
 /* Facilities Page */
+.facilities section{
+    padding: 20px;
+}
+
+.facilities h2{
+    margin-bottom: 20px;
+}
+
 .facility-card {
     transition: transform 0.3s ease-in-out;
     text-align: center;
@@ -247,6 +267,32 @@ footer .border-bottom {
 }
 .map-container {
     height: 350px;
+}
+
+.contact section{
+    padding: 20px;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+/* Bookking html */
+.booking-container {
+    background: rgb(230, 228, 228);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+}
+.booking-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking{
+    padding: 20px;
 }
 
 /* Footer section */
