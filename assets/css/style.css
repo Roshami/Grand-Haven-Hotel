@@ -197,9 +197,6 @@ header {
     padding-top: 20px;
 }
 
-
-
-
 /* Contact Page */
 .contact-info-item {
     display: flex;
@@ -213,6 +210,16 @@ header {
     min-width: 2rem;
     text-align: center;
 }
+
+.map-container{
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Form Styles */
 .form-control:focus {
