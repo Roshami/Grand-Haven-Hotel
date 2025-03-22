@@ -27,7 +27,7 @@ a {
 /* Header & Navigation */
 header {
     background-color: var(--primary-color);
-    height: 86px;
+    
 }
 
 .navbar-brand span {
